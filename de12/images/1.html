@@ -21,15 +21,21 @@
         }
         .flex-container {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start; gap: 40px;
             align-items: center;
             margin-bottom: 20px;
         }
         .image-area img {
-            max-width: 300%;
+           margin-top: 30px;
+            max-width: 250%;
             height: auto;
+            max-width:none;
         }
-        .text-area p {
+    .text-area {
+            text-align: left;
+            width: 100%;
+        }
+        .text-area p { 
             margin-bottom: 8px;
             font-size: 15px;
         }
@@ -38,13 +44,14 @@
             margin-left: 20px;
         }
        body {background-color: #eee2ff;}
-       .container {background-color: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
-    </style>
+       .container {background-color: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);}
+       .tag-box {background-color: #ffffff; padding: 15px; border-left: 5px solid #ff0000; margin-bottom: 15px;}
+   </style>
 </head>
 <body>
 
    <div class="container">
-<center><h1>第一回課題</h1></center>
+<center><h1><u>第一回課題</u></h1></center>
 
     <!-- 塊ごとにdivタグで区切るようにしましょう。 -->
   <div>
@@ -65,9 +72,10 @@
 <!-- ②↓に画像（imagesフォルダにあるtest.png）を挿入してみよう -->
  <div class="flex-container">
     <div class="image-area">
-        <img src="screenshot.png"width="60%">
+        <img src="screenshot.png"width="100%">
     </div>
     <div class="text-area">
+    
         <p>ローカルリポジトリ：自分のパソコンで変更履歴を管理する場所</p>
         <p>リモートリポジトリ：ネット上でファイルや変更履歴を共有できる場所</p>
         <p>add :記録する変更を選ぶ</p>
@@ -85,13 +93,14 @@
 
 
 <p style="font-size: 24px;"><strong>主なタグ</strong></p>
-    <ul>
+   <div class="tag-box">
+<ul>
                         <li>html →HTML文書全体を囲む</li>
                         <li>head →設定情報を書く</li>
                         <li>body →画面に表示する内容を書く</li>
                         <li>h1~h6 →見出し</li>
                         <li>p →段落</li>
                         <li>br →改行</li>
-                    </ul>
+                    </ul></div>
                    <p>など様々なタグがあります。（詳しくは<a href="http://www.fureai.or.jp/~irie/html-tag/">こちら</a>から）<br>
                     状況に合わせて、適切なHTMLタグを使用することで読者がわかりやすいページを作成することが出来ます。
