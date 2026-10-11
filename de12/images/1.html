@@ -5,35 +5,93 @@
     <title>第一回課題</title>
     <!-- ⑤スタイルシートの設定をしよう --> 
       <link rel="stylesheet" href="css/style.css">
-    <!-- h1.htmlからある行をコピペしてくればOK -->
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .image-area img {
+            max-width: 300%;
+            height: auto;
+        }
+        .text-area p {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+       body {background-color: #eee2ff;}
+       .container {background-color: #ffffff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+    </style>
 </head>
 <body>
-    <h1>第一回課題</h1>
+
+   <div class="container">
+<center><h1>第一回課題</h1></center>
+
     <!-- 塊ごとにdivタグで区切るようにしましょう。 -->
+  <div>
+    <p style="font-size: 24px;"><strong>Gitとは</strong></p>
+  </div>
     <div>
-ファイルのバージョンを管理するためのソフトでSCM(Source Control Management)の一つ。<br>
-主に以下の二点の役割を果たしている。<br>
+ファイルのバージョンを管理するためのソフトでSCM(Source Control Management)の一つです。<br>
+主に以下の二点の役割を果たしています。<br>
                     <ul>
                         <li>ファイルの状態管理</li>
                         <li>ファイルの変更履歴管理</li>
                     </ul>
-しかし、Gitで管理しているファイルであれば、コンピューター上でファイルの編集履歴を管理できるので、<br>
-編集前のファイルを残したまま、新しく編集したファイルを保存することができます。<br>
-なので古いバージョンから新しいバージョンまでの管理が簡単です。
+ファイルをGitで記録しておけば、いつ、どこで変更されたのかを確認できたり<br>
+以前の状態に戻したりできます。<br>
+イメージとしては、ゲームのセーブポイントのようなものです。
 </div>
-         <!-- ②↓に画像（imagesフォルダにあるtest.png）を挿入してみよう -->
- 画像を表示(30%)<br>
- <img src="./images/testimage.png" width="30%"><br>
- 画像を表示(40%)<br>
-    <img src="images/testimage.png" width="40%"><br> 
-    <img src="./images/ダウンロード (2).jpg"br>
-         <!-- ③↓に箇条書きをしてみよう 
- <ol>
-                        <li>ああああああ</li>
-                        <li>いいいいいい</li>
-                    </ol>
+       
+<!-- ②↓に画像（imagesフォルダにあるtest.png）を挿入してみよう -->
+ <div class="flex-container">
+    <div class="image-area">
+        <img src="screenshot.png"width="60%">
+    </div>
+    <div class="text-area">
+        <p>ローカルリポジトリ：自分のパソコンで変更履歴を管理する場所</p>
+        <p>リモートリポジトリ：ネット上でファイルや変更履歴を共有できる場所</p>
+        <p>add :記録する変更を選ぶ</p>
+        <p>commit :変更を履歴として記録する</p>
+    </div>
+ </div>
+<div>
+<p style="font-size: 24px;"><strong>HTMLとは</strong></p>
+</div>
+<div>HTMLとは、Webページを作成するための基本的なマークアップ言語で、<br>
+    「HyperText Markup Language（ハイパーテキスト・マークアップ・ランゲージ）」の略です。</div>
 
-         <!-- ④↓に外部リンクを作ってみよう -->
-<a href="index.html">デザイン演習Ⅰ・Ⅱトップページ</a><br>
-<a href="../index.html">XBPトップページ</a><br>
- <a href="https://www.yahoo.co.jp/" target="_blank">Yahoo</a><br>
+<div>人間がテキスト情報を目にした際に段落やタイトル、太字を識別できるのと同じように、<br>
+    コンピュータはHTMLをはじめとしたマークアップ言語を介してテキスト情報を識別しています。</div>
+
+
+<p style="font-size: 24px;"><strong>主なタグ</strong></p>
+    <ul>
+                        <li>html →HTML文書全体を囲む</li>
+                        <li>head →設定情報を書く</li>
+                        <li>body →画面に表示する内容を書く</li>
+                        <li>h1~h6 →見出し</li>
+                        <li>p →段落</li>
+                        <li>br →改行</li>
+                    </ul>
+                   <p>など様々なタグがあります。（詳しくは<a href="http://www.fureai.or.jp/~irie/html-tag/">こちら</a>から）<br>
+                    状況に合わせて、適切なHTMLタグを使用することで読者がわかりやすいページを作成することが出来ます。
