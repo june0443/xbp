@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+
+    <style>
+        body {
+            background:radial-gradient(ellipse at 50% 40%, #25234f 0%, #171936 45%, #0c1028 75%, #070b1c 100%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+            color: #f5f3ff;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        h1{
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        h2{
+            margin-top: 50px;
+            margin-bottom: 24px;
+        }
+
+        .phont-frame {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            width: 80%;
+            margin: 40px auto;
+        }
+
+        .phont {
+            width: 30%;
+            padding: 15px;
+            border: 1px solid white;
+            background: transparent;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .phont img{
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .phont p{
+            color: white;
+            margin-top: 15px;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 5px;
+            width: fit-content;
+            margin: 40px auto;
+            padding: 8px;
+            border: 1px solid white;
+        }
+
+        .grid-item {
+            background: transparent;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .photo-grid img {
+            width: 340px;
+            height: 400px;
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
+            border: 2px solid white;
+        }
+
+        .mokumoku-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        .mokumoku-img {
+            width: 340px;
+            height: 340px;
+            flex-shrink: 0;
+
+        -webkit-mask-image:
+        radial-gradient(circle at 22% 22%, black 22%, transparent 22.5%),
+        radial-gradient(circle at 50% 22%, black 22%, transparent 22.5%),
+        radial-gradient(circle at 78% 22%, black 22%, transparent 22.5%),
+        radial-gradient(circle at 22% 50%, black 22%, transparent 22.5%),
+        radial-gradient(circle at 50% 50%, black 22%, transparent 22.5%),
+        radial-gradient(circle at 78% 50%, black 22%, transparent 22.5%),
+        radial-gradient(circle at 22% 78%, black 22%, transparent 22.5%),
+        radial-gradient(circle at 50% 78%, black 22%, transparent 22.5%),
+        radial-gradient(circle at 78% 78%, black 22%, transparent 22.5%);
+        mask-image:
+        radial-gradient(circle at 22% 22%, black 22%, transparent 22.5%),
+        radial-gradient(circle at 50% 22%, black 22%, transparent 22.5%),
+        radial-gradient(circle at 78% 22%, black 22%, transparent 22.5%),
+        radial-gradient(circle at 22% 50%, black 22%, transparent 22.5%),
+        radial-gradient(circle at 50% 50%, black 22%, transparent 22.5%),
+        radial-gradient(circle at 78% 50%, black 22%, transparent 22.5%),
+        radial-gradient(circle at 22% 78%, black 22%, transparent 22.5%),
+        radial-gradient(circle at 50% 78%, black 22%, transparent 22.5%),
+        radial-gradient(circle at 78% 78%, black 22%, transparent 22.5%);
+        }
+
+        .mokumoku-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background-color: #ffffff;
+            display: block;
+        }
+
+        .mokumoku-text {
+         max-width: 450px;
+         line-height: 1.8;
+        }
+
+    </style>
+    <!-- ⑥↓タイトルを変えてみよう -->
+    <title>ブックケース</title>
+
+    <body>
+    
+<center><h1>ブックケース</h1></center>
+
+<center><h2>作品の説明</h2></center>
+
+<center><p>今回はレーザーカッターを用いてブックケースを作成しました。<br>
+読書が好きなのでよく本を持ち運ぶのですが、バッグの中でページが折れてしまったり、曲がってしまうことが多くありました。<br>
+そこで、本を守るためだけでなく、家の本棚に飾っても可愛いブックケースを作成しました。<br>
+本を読み終わった後の余韻と宇宙の途方のない感覚が似ていると感じるので、デザインは宇宙をテーマしました。</p>
+
+<center><h2>スケッチと制作過程</h2></center>
+<div class="phont-frame">
+
+    <div class="phont">
+        <img src="de.jpg" alt="スケッチ">
+        <p>スケッチ</p>
+    </div>
+
+    <div class="phont">
+        <img src="se.jpg" alt="制作過程">
+        <p>制作過程</p>
+    </div>
+
+    <div class="phont">
+        <img src="re.jpg" alt="レーザーカッター">
+        <p>レーザーカッター</p>
+    </div>
+
+</div>
+<center><h2>完成形</h2></center>
+<div class="photo-grid">
+
+    <div class="grid-item">
+        <img src="1.jpg" alt="完成形">
+    </div>
+    <div class="grid-item">
+        <img src="2.jpg" alt="完成形2">
+    </div>
+    <div class="grid-item">
+        <img src="3.jpg" alt="完成形3">
+    </div>
+    <div class="grid-item">
+        <img src="4.jpg" alt="完成形4">
+    </div>
+</div>
+
+<div class="mokumoku-section">
+    <div class="mokumoku-img">
+        <img src="5.jpg" alt="もくもく会の画像">
+    </div>
+
+    <div class="mokumoku-text">
+        <p>実際に本棚に並べてみました。<br>
+        背表紙には星を彫刻したので表紙部分が見えなくても<br>
+        とてもかわいいです！！！</p>
+</div>
+
+    <div class="mokumoku-text">
+<center><h2>設計ファイル</h2></center>
+<a href="files/book.dxf" download>ブックケース設計ファイル</a></div>
+</body>
